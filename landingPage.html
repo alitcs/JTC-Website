@@ -5,28 +5,56 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>JTC Property Services</title>
   <link rel="stylesheet" href="stylesheet.css" />
-  <link rel="icon" href="JTClogo.png" type="image/x-icon" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@800&display=swap" rel="stylesheet">
+  <link rel="icon" href="images/Logo.png" type="image/x-icon" />
 </head>
+<script src="landingPage.js"></script>
 <body>
   <header>
+    <div class="header-container">
     <section id="home">
     <img src="images/NavBarImage.png" alt="JTC Property Services Logo" class="banner-image" />
     <nav class="nav-bar">
             <div class="button"><a href="#home"><img src="images/homebar/HomeButton.png" alt="HomeButton" class="logo"></a></div>
             <div class="main-buttons">
-            <div class="button"><a href="#locations"><img src="images/homebar/locations-homebar.png" class="homebar-locations"></a></div>
-            <div class="button"><a href="#pastwork"><img src="images/homebar/portfolio-homebar.png" class="homebar-portfolio"></a></div>
-            <div class="button"><a href="#reviews"><img src="images/homebar/reviews-homebar.png" class="homebar-reviews"></a></div>
-            <div class="button"><a href="#socials"><img src="images/homebar/socials-homebar.png" class="homebar-socials"></a></div>
-            <div class="button"><a href="#contact"><img src="images/homebar/contact-homebar.png" class="homebar-contact"></a></div>
+            <div class="button"><a href="#locations" class="homebar-text">Locations</a></div>
+            <div class="button"><a href="#portfolio" class="homebar-text">Portfolio</a></div>
+            <div class="button"><a href="#reviews" class="homebar-text">Reviews</a></div>
+            <div class="button"><a href="#socials" class="homebar-text">Socials</a></div>
+            <div class="button"><a href="#contact" class="homebar-text">Contact</a></div>
             </div>
       </nav>
     </section>
+  </div>
   </header>
-  <section id="locations"></section>
-  <section id="pastwork"></section>
+  <div class="content">
+  <section id="locations">
+    <img src="images/map.png">
+  </section>
+  <section id="portfolio">
+    <div class="slides-wrapper">
+      <img src="portfolio/bathroom1.jpg" class="gallery-image">
+      <img src="portfolio/bathroom2.jpg" class="gallery-image">
+      <img src="portfolio/doorlights2.jpg" class="gallery-image">
+      <img src="portfolio/doorlights1.jpg" class="gallery-image">
+      <img src="portfolio/house1.jpg" class="gallery-image">
+      <img src="portfolio/roof2.jpg" class="gallery-image">
+      <img src="portfolio/roof1.jpg" class="gallery-image">
+      <img src="portfolio/roof3.jpg" class="gallery-image">
+      <img src="portfolio/roof4.jpg" class="gallery-image">
+      <img src="portfolio/roof5.jpg" class="gallery-image">
+      <img src="portfolio/roof6.jpg" class="gallery-image">
+      <img src="portfolio/shed1.jpeg" class="gallery-image">
+      <img src="portfolio/shed2.jpg" class="gallery-image">
+      <img src="portfolio/wires1.jpg" class="gallery-image">
+      <img src="portfolio/wires3.jpg" class="gallery-image">
+      <img src="portfolio/wires4.jpg" class="gallery-image">
+      <img src="portfolio/yard1.jpg" class="gallery-image">
+    </div>
+  </section>
   <section id="reviews"></section>
   <section id="socials"></section>
   <section id="contact"></section>
+  </div>
 </body>
 </html>
