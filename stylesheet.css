@@ -81,13 +81,84 @@ header {
 }
 
 #portfolio {
+  position: relative;
   display: block;
 }
 
 .slides-wrapper {
   display: flex;
+  position: absolute;
   overflow-x: scroll;
   scroll-snap-type: x mandatory;
   width: auto;
-  height: 60vh;
+  height: 70vh;
+}
+
+.transition-image {
+  position: absolute;
+  display: inline;
+  width: 100%;
+  height: auto;
+  display: block;
+  z-index: 3;
+}
+
+.header-container {
+  position: relative;
+  display: flex;
+}
+
+.transition-image-header {
+  top: 430px;
+}
+
+.transition-image-locations {
+  top: 1050px;
+}
+
+.transition-extension {
+  position: absolute;
+  top: 500px;
+  right: -300px;
+}
+
+.map-image {
+  width: 100vw;
+  height: 80vh;
+  display: block;
+  margin-top: -140px;
+  z-index: 1;
+}
+
+.locations-text {
+  position: relative;
+  font-family: Montserrat;
+  font-size: 55px;
+  color: #545454;
+  text-align: left;
+  margin-top: 20px;
+  z-index: 5;
+  top: -10px;
+  left: 60px;
+}
+
+section {
+  scroll-margin-top: 100px;
+}
+
+.transition-extension-locations {
+  top: 850px;
+  left: 1100px;
+}
+
+.portfolio-text {
+  position: relative;
+  font-family: Montserrat;
+  font-size: 55px;
+  color: #545454;
+  text-align: left;
+  margin-top: 20px;
+  z-index: 5;
+  top: 15px;
+  left: 60px;
 }
