@@ -68,6 +68,7 @@
     background-color: white;
     display: flex;
     margin: auto;
+    filter: drop-shadow(2px 2px 0px rgba(0, 0, 0, 0.5));
 }
 
 .free-quote-button:hover {
@@ -101,6 +102,7 @@
         font-size: 0.75rem;
     }
 }
+
 
 @media screen and (max-width: 550px) {
     .homebar-text {
@@ -233,6 +235,15 @@
         font-size: 0.6rem;
     }
 
+    .map-info.open .map-info-hidden {
+  opacity: 1;
+  transform: translateY(0%);
+}
+
+.map-info.open .map-info-button-wrapper {
+    border-top-left-radius: 0px;
+}
+
 }
 
 @media screen and (max-width: 675px) {
@@ -242,6 +253,15 @@
         .map-info-button-text {
         font-size: 0.45rem;
     }
+
+        .map-info.open .map-info-hidden {
+  opacity: 1;
+  transform: translateY(0%);
+}
+
+.map-info.open .map-info-button-wrapper {
+    border-top-left-radius: 0px;
+}
 }
 
 @media screen and (max-width: 370px) {
@@ -251,6 +271,14 @@
         .map-info-button-text {
         font-size: 0.35rem;
     }
+        .map-info.open .map-info-hidden {
+  opacity: 1;
+  transform: translateY(0%);
+}
+
+.map-info.open .map-info-button-wrapper {
+    border-top-left-radius: 0px;
+}
 }
 
 
@@ -261,6 +289,14 @@
         .map-info-button-text {
         font-size: 0.25rem;
     }
+        .map-info.open .map-info-hidden {
+  opacity: 1;
+  transform: translateY(0%);
+}
+
+.map-info.open .map-info-button-wrapper {
+    border-top-left-radius: 0px;
+}
 }
 
 .gallery-body {
@@ -485,7 +521,7 @@ font-family: Montserrat;
 }
 
 .contact-body{
-        background-image: url(images/socials-backdrop.png);
+    background-image: url(images/socials-backdrop.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: top center;
