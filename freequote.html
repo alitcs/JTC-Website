@@ -9,16 +9,15 @@
         <title>Free Quote</title>
     </head>
     <body class="free-quote-body">
-            <nav class="nav-bar">
-            <div class="button"><a href="home.html"><img src="images/homebar/HomeButton.png" alt="HomeButton" class="logo"></a></div>
-            <div class="main-buttons">
-            <div class="button"><a href="locations.html" class="homebar-text">Locations</a></div>
-            <div class="button"><a href="gallery.html" class="homebar-text">Gallery</a></div>
-            <div class="button"><a href="socials.html" class="homebar-text">Socials</a></div>
-            <div class="button"><a href="contact.html" class="homebar-text">Contact</a></div>
-            </div>
-      </nav>
-        <img src="images/free-quote-image.png" alt="free-quote-image" class="free-quote-image" />
+  <div class="home-bar">
+    <a href="home.html" class="home-button"><img src="images/homebar/HomeButton.png" alt="HomeButton" class="logo"></a>
+    <div class="main-buttons">
+      <a href="locations.html" class="homebar-text">Locations</a>
+      <a href="gallery.html" class="homebar-text">Gallery</a>
+      <a href="socials.html" class="homebar-text">Socials</a>
+      <a href="contact.html" class="homebar-text">Contact</a>
+    </div>
+  </div>
             <div class="form-box">
             <h1 class="form-title">Get Your Free Quote</h1>
             <form class="free-quote-form"action="https://formsubmit.co/jtcpropertyservices25@gmail.com" method="POST">
@@ -32,7 +31,7 @@
                 <textarea id="message" name="message" required></textarea>
                 <input type="hidden" name="_captcha" value="false">
                 <input type="hidden" name="_next" value="http://127.0.0.1:5500/submissionconfirmed.html">
-                <button type="submit" class="free-quote-submit-button"><p>Submit</p></button>
+                <button type="submit" class="free-quote-submit-button">Submit</button>
             </form>
             </div>
     </body>
