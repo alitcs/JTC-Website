@@ -8,6 +8,10 @@
     width: 100vw;
     min-height: 100vh;
     overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow: hidden;
 }
 
 .logo {
@@ -63,12 +67,13 @@
 
 .free-quote-button {
     aspect-ratio: 2/1;
-    width: 25vw;
-    border-radius: 3.5rem;
+    width: clamp(200px, 25vw, 1000px);
+    border-radius: 6rem;
     background-color: white;
     display: flex;
-    margin: auto;
     filter: drop-shadow(2px 2px 0px rgba(0, 0, 0, 0.5));
+    margin-left: 70vw;
+    margin-bottom: 5vh;
 }
 
 .free-quote-button:hover {
@@ -79,7 +84,7 @@
 .free-quote-button-inner {
     width: 80%;
     height: 60%;
-    border-radius: 2.3rem;
+    border-radius: 5rem;
     background-color: rgb(211, 211, 211);
     color: #545454;
     opacity: 0.7;
@@ -101,6 +106,10 @@
     .quote {
         font-size: 0.75rem;
     }
+
+    .free-quote-button {
+        margin-left: 60vw;
+    }
 }
 
 
@@ -111,6 +120,22 @@
 
     .quote {
         font-size: 0.5rem;
+    }
+
+    .free-quote-button {
+        margin-left: 50vw;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .free-quote-button {
+        margin-left: 40vw;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .free-quote-button {
+        margin-left: auto;
     }
 }
 
@@ -756,18 +781,16 @@ textarea {
   font-size: clamp(12px, 2vw, 300px);
   cursor: pointer;
   border-radius: 1.5rem;
-  width: 65%;
-  height: 55%;
+  width: clamp(75px,20vw, 1000px);
+  height: clamp(25px,0.15vh, 800px);
     display: flex;
   flex-direction: column;
   justify-content: space-around;
-  min-height: 60%;
-  min-width: 75%;
   text-align: center;
   margin-bottom: 10%;
   margin-left: 13%;
     margin-top: 10%;
-    padding-bottom: 10%;
+    padding-bottom: 12%;
 }
 
 .home-button-submission:hover {
